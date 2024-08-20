@@ -97,7 +97,7 @@ const comfirmEdit=()=>{
 </script>
 
 <template>
-
+<link href='https://fonts.googleapis.com/css?family=Noto Sans TC' rel='stylesheet'>
   <div class="container">
     <h1>Vue點餐機</h1>
     <h3>六角學院 2024 Vue 前端新手營 by Andrew</h3>
@@ -144,6 +144,21 @@ const comfirmEdit=()=>{
 
 <style scoped>
 
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff !important; /* 設置整個網頁背景為白色 */
+  color: black;
+  font-family: 'Noto Sans TC', sans-serif; /* 確保使用正確的字體 */
+  /* 默認情況下也使 body 內容居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
 th{
   color: #ffffff;
 }
@@ -152,6 +167,11 @@ th{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直置中 */
+  align-items: center; /* 水平置中 */
+  min-height: 100vh; /* 確保容器高度至少為視窗高度 */
 }
 
 h1, h2, h3 {
